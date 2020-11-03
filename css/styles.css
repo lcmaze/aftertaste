@@ -28,8 +28,16 @@
     src: url("../fonts/Pangram-ExtraBold.otf") format("opentype");
 }
 
+html {
+    scroll-behavior: smooth !important;
+}
+
 body {
     font-family: Pangram;
+}
+
+#main {
+    transition: all 0.5s ease-in-out !important;
 }
 
 .sidebar {
@@ -41,7 +49,7 @@ body {
     right: 0;
     background-color: #111;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: all 0.5s ease-in-out !important;
     padding-top: 70px;
 }
 
@@ -89,7 +97,7 @@ body {
 }
 
 nav {
-    position: absolute;
+    position: sticky;
     top: 0;
     z-index: 999;
     background-color: #fff;
