@@ -97,7 +97,7 @@ body {
 }
 
 nav {
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 999;
     background-color: #fff;
@@ -119,6 +119,8 @@ nav {
 .navigation a {
     color: #000;
     font-size: 40px;
+    cursor: pointer;
+    user-select: none;
 }
 
 .banner-section {
