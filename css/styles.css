@@ -324,13 +324,13 @@ nav {
 }
 
 .creme-box {
-    width: 30px;
+    width: 10px;
     height: 180%;
     position: absolute;
     top: -40px;
-    background-color: #f2c475;
+    background-color: #ffffff10;
     transform: rotate(20deg);
-    right: 20px;
+    right: 30px;
 }
 
 .gallery {
@@ -364,6 +364,7 @@ nav {
 
 .img-overlay h4 {
     position: absolute;
+    user-select: none;
 }
 
 .head {
@@ -477,6 +478,25 @@ footer .foot-desc {
     padding: 80px 0px;
 }
 
+.a-button {
+    background-color: #000000;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    padding: 8px 28px;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    transition: all .4s ease;
+}
+
+.a-button:hover {
+    background-color: #c80035;
+}
+
+.a-button:focus {
+    outline: none;
+    border: none;
+}
+
 @keyframes float {
     0% {
         transform: translatey(0px);
@@ -494,7 +514,7 @@ footer .foot-desc {
     animation: float 3.3s ease-in-out infinite;
 } */
 
-@media(max-width:1200px) {
+@media(max-width:1199.98px) {
     .overlay {
         background-image: url('../images/bg.jpg');
         background-size: cover;
@@ -538,12 +558,8 @@ footer .foot-desc {
     }
 }
 
-@media (min-width:1350px) {
+@media (min-width:1600px) {
     .container {
-        max-width: 1310px !important;
-    }
-    .bann-txt {
-        width: 380px;
-        max-width: 100%;
+        max-width: 1280px !important;
     }
 }
