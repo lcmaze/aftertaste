@@ -488,11 +488,23 @@ footer .foot-desc {
     transition: all .4s ease;
 }
 
-.a-button:hover {
+.b-button {
+    background-color: #ffffff;
+    outline: none;
+    border: none;
+    color: #000000;
+    padding: 8px 28px;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    transition: all .4s ease;
+}
+
+.a-button:hover,
+.b-button:hover {
     background-color: #c80035;
 }
 
-.a-button:focus {
+.a-button:focus,
+.b-button:focus {
     outline: none;
     border: none;
 }
