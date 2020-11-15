@@ -32,17 +32,48 @@
         <a href="#portfolio">Portfolio</a>
         <a href="#clients">Clients</a>
         <a href="#contact">Contact</a>
+        <div class="social-links mt-4 py-4 pr-3">
+            <a href="#">
+                <li class="d-flex">
+                    <span class="mr-4">Facebook</span>
+                    <img style="width: 18px;" src="images/social/fb1.svg" alt="">
+                </li>
+            </a>
+            <a href="#">
+                <li class="d-flex">
+                    <span class="mr-4">Instagram</span>
+                    <img style="width: 18px;" src="images/social/in1.svg" alt="">
+                </li>
+            </a>
+            <a href="#">
+                <li class="d-flex">
+                    <span class="mr-4">Twitter</span>
+                    <img style="width: 18px;" src="images/social/tw1.svg" alt="">
+                </li>
+            </a>
+            <a href="#">
+                <li class="d-flex">
+                    <span class="mr-4">Linkedin</span>
+                    <img style="width: 18px;" src="images/social/ln1.svg" alt="">
+                </li>
+            </a>
+        </div>
     </div>
 
     <div id="main">
 
-        <nav class="px-3 px-md-4 py-2">
-            <div class="logo wow fadeIn">
+        <nav id="navbar">
+            <div id="logo-large" class="logo fadeIn">
                 <a href="index.html">
                     <img src="images/logo.png" alt="">
                 </a>
             </div>
-            <div class="navigation wow fadeIn">
+            <div id="logo-small" class="logo-small fadeIn">
+                <a href="index.html">
+                    <img src="images/small.png" alt="">
+                </a>
+            </div>
+            <div class="navigation fadeIn">
                 <a onclick="openNav()">
                     <span class="material-icons">menu</span>
                 </a>
@@ -51,15 +82,15 @@
 
         <section class="banner-section">
             <div class="overlay-cnt text-center">
-                <!-- <img class="w-100" src="images/banner.png" alt=""> -->
-                <div class="row w-100">
+                <img class="w-100 wow fadeIn" src="images/banner.png" alt="">
+                <!-- <div class="row w-100">
                     <div class="col-md-6 p-3 d-flex justify-content-start align-items-center wow fadeInDown">
                         <img class="bann-txt" src="images/banner-txt.png" alt="">
                     </div>
                     <div class="col-md-6 p-3 d-flex justify-content-md-end align-items-center wow fadeInUp">
                         <img class="bann-txt avatar" src="images/banner-img.png" alt="">
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="overlay-footer wow fadeIn">
                 <h2>Branding</h2>
@@ -70,189 +101,122 @@
             </div>
         </section>
 
-        <section id="about">
-            <div class="container py-5">
+        <section id="about" style="background-color:#00827f; position: relative;overflow: hidden;">
+            <div class="container">
                 <div class="row .mx-0">
-                    <div class="col-lg-4 px-0 d-flex align-items-center">
+                    <div class="col-lg-4 px-0">
                         <div class="w-100 wow fadeInLeft">
-                            <div class="img1 text-center">
-                                <img src="images/hello.png" alt="">
-                            </div>
                             <div class="img2 text-center">
                                 <img class="avatar" src="images/hello-img.png" alt="">
                             </div>
+                            <div class="img1 text-center">
+                                <img src="images/hello.png" alt="">
+                            </div>
+
                         </div>
                     </div>
-                    <div class="col-lg-8 p-3 d-flex align-items-center wow fadeInUp">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque beatae molestiae assumenda iure delectus repellat non recusandae voluptate optio rerum aliquid, amet accusantium, saepe repellendus maxime quaerat ducimus vel, obcaecati libero iste
-                            ex esse exercitationem! Quae deleniti consectetur inventore praesentium rem tempore eos maxime itaque, beatae harum sed? Tenetur, odit molestias. Consequatur ipsum perspiciatis perferendis voluptatum suscipit, vero libero sit
-                            enim eaque cumque animi nam veniam fugit quae facilis pariatur! Optio, recusandae? Omnis eos commodi veritatis quis deleniti soluta corporis dolore repellat dolorem, consequatur expedita dignissimos numquam quisquam beatae?
-                            Dignissimos, repellendus obcaecati expedita quo nulla, vero laboriosam adipisci non eaque quae tempora dolorem, voluptas possimus dicta quaerat eius sunt! Sapiente reprehenderit tenetur ab quae eaque in natus praesentium aperiam
-                            nesciunt id fugiat, quidem voluptas officia a saepe voluptatem inventore earum ipsum tempora, ipsa maiores veniam amet? Error temporibus distinctio facere dolorum, unde, impedit dolores esse explicabo et similique cupiditate,
-                            assumenda ipsum animi nulla ipsam! Nobis consectetur iure voluptates mollitia. Ipsam dolorem eligendi suscipit dolore delectus mollitia quidem voluptates illum autem consectetur obcaecati blanditiis, earum, quasi laboriosam
-                            quam asperiores eius nihil accusamus nobis voluptatibus illo ad perspiciatis? Perspiciatis omnis labore, molestiae eos aut assumenda temporibus neque saepe, nostrum quia, error nisi. quam asperiores eius nihil accusamus nobis
-                            voluptatibus illo ad perspiciatis? Perspiciatis omnis labore, molestiae eos aut assumenda temporibus neque saepe, nostrum quia, error nisi.
-                        </p>
+                    <div class="col-lg-8 px-3 d-flex position-relative align-items-center justify-content-lg-end" style="padding-top: 100px;z-index: 2;">
+                        <div style="max-width: 500px;">
+                            <p style="margin-bottom: 60px;" class="wow fadeIn">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque beatae molestiae assumenda iure delectus repellat non recusandae voluptate optio rerum aliquid, amet accusantium, saepe repellendus maxime quaerat ducimus vel, obcaecati libero iste
+                                ex esse exercitationem! Quae deleniti consectetur inventore praesentium rem tempore eos maxime itaque, beatae harum sed? Tenetur, odit molestias. Consequatur ipsum perspiciatis perferendis voluptatum suscipit, vero libero
+                                sit voluptatibus illo ad perspiciatis? Perspiciatis omnis labore, molestiae eos aut assumenda temporibus neque saepe, nostrum quia, error nisi.
+                            </p>
+                            <div class="white-circle d-none d-xl-block"></div>
+                        </div>
                     </div>
                 </div>
+                <div class="white-line d-none d-xl-block"></div>
             </div>
         </section>
 
         <section id="services">
-            <div class="cover banner1">
+            <!-- <div class="cover banner1">
                 <h1>WE DO</h1>
-            </div>
-        </section>
+            </div> -->
+            <div class="wedo">
+                <div class="container">
+                    <div class="text-center">
+                        <img src="images/wedo.png" alt="">
+                        <p class="mt-5" style="font-size: 18px; color: #fff; font-weight: 400;">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, enim laboriosam consequuntur facilis natus commodi a cupiditate, quis, tenetur sapiente cum dolore architecto voluptatibus assumenda neque ab numquam repudiandae aut?
+                        </p>
+                    </div>
 
-        <section>
-            <div class="container py-5 wow fadeIn">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos minus delectus accusamus voluptate hic eos laboriosam nisi provident eveniet natus blanditiis, reprehenderit mollitia sed sequi fugiat, ex quasi, tempora beatae modi assumenda asperiores
-                eaque nulla. Asperiores amet dignissimos architecto id dolores! Nisi illo recusandae quos quis, deleniti temporibus dolorem saepe repudiandae dolorum autem similique earum provident voluptatibus voluptas doloremque! Reprehenderit sit provident
-                tenetur soluta id magni nam possimus inventore necessitatibus aspernatur, vel maxime velit accusamus pariatur! Explicabo, facilis saepe! Cum molestiae nobis vitae, qui inventore asperiores, dignissimos accusantium porro dolores odit aliquam?
-                Ea nihil hic in cum tenetur assumenda possimus necessitatibus fuga delectus unde, dicta quibusdam magni non eos praesentium culpa quidem odit provident voluptate nostrum! Modi fugit voluptatum voluptate quaerat eligendi dolores nisi optio
-                quam adipisci illum voluptas odit totam voluptatibus accusantium quos doloremque amet aperiam, consequatur unde ullam consectetur perspiciatis mollitia laudantium? Ab quam accusantium consectetur dolores dolore quibusdam animi cupiditate
-                blanditiis reprehenderit temporibus! Voluptatem, sed libero! Magni minus blanditiis fuga amet, ipsa et! Temporibus eaque quae laboriosam? Sint earum quasi saepe, nesciunt vitae, esse reiciendis est officia, corporis dolorum repellendus.
-                Amet commodi quam quos error, ad accusantium reiciendis corrupti consequuntur aliquam nisi mollitia atque quas eveniet adipisci.
-            </div>
-        </section>
+                    <div class="row mx-0">
+                        <div class="col-md-4 px-3 py-4 d-flex justify-content-center">
+                            <div style="max-width: 300px;text-align: center;">
+                                <img src="images/01.png" alt="">
+                                <h2 style="color: #fff;margin-bottom: 20px;">Branding</h2>
+                                <p style="color: #fff; font-weight: 400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor atque nemo tenetur voluptates repellat asperiores eaque delectus, sequi consequatur quo.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 px-3 py-4 d-flex justify-content-center">
+                            <div style="max-width: 300px;text-align: center;">
+                                <img src="images/02.png" alt="">
+                                <h2 style="color: #fff;margin-bottom: 20px;">Branding</h2>
+                                <p style="color: #fff; font-weight: 400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor atque nemo tenetur voluptates repellat asperiores eaque delectus, sequi consequatur quo.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 px-3 py-4 d-flex justify-content-center">
+                            <div style="max-width: 300px;text-align: center;">
+                                <img src="images/03.png" alt="">
+                                <h2 style="color: #fff;margin-bottom: 20px;">Branding</h2>
+                                <p style="color: #fff; font-weight: 400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor atque nemo tenetur voluptates repellat asperiores eaque delectus, sequi consequatur quo.</p>
+                            </div>
+                        </div>
+                    </div>
 
-        <section>
-            <div class="container pb-5">
-                <h1 class="head wow fadeIn">WE DO</h1>
-                <div class="row wow fadeIn">
-                    <div class="col-md-6 col-xl-3 p-3">
-                        <div class="color-box px-2 py-4 px-md-4 c1">
-                            <h2>Design</h2>
-                            <div class="lists">
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                            </div>
-                        </div>
+                    <div class="text-center mt-5">
+                        <h4 class="mb-3 text-white">The <span style="color: #f2c475;">AFTERTASTE</span> Approach</h4>
+                        <p class="mb-0" style="font-size: 18px; color: #fff; font-weight: 400;">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia, enim laboriosam consequuntur facilis natus commodi a cupiditate, quis, tenetur sapiente cum dolore architecto voluptatibus assumenda neque ab numquam repudiandae aut?
+                        </p>
                     </div>
-                    <div class="col-md-6 col-xl-3 p-3">
-                        <div class="color-box px-2 py-4 px-md-4 c2">
-                            <h2>Digital</h2>
-                            <div class="lists">
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
+
+                    <div class="row mt-5">
+                        <div class="col-md-6 col-xl-4 p-3 wow fadeIn">
+                            <div class="numbox position-relative px-2 px-md-4">
+                                <div class="value">01</div>
+                                <div class="num-desc">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </div>
+                                <div class="creme-box d-none d-xl-block"></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-xl-3 p-3">
-                        <div class="color-box px-2 py-4 px-md-4 c3">
-                            <h2>Photoshoot</h2>
-                            <div class="lists">
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
+                        <div class="col-md-6 col-xl-4 p-3 wow fadeIn">
+                            <div class="numbox position-relative px-2 px-md-4">
+                                <div class="value">02</div>
+                                <div class="num-desc">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </div>
+                                <div class="creme-box d-none d-xl-block"></div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-xl-3 p-3">
-                        <div class="color-box px-2 py-4 px-md-4 c4">
-                            <h2>Video Production</h2>
-                            <div class="lists">
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
-                                <li>Brand Identity</li>
+                        <div class="col-md-6 col-xl-4 p-3 wow fadeIn">
+                            <div class="numbox position-relative px-2 px-md-4">
+                                <div class="value">03</div>
+                                <div class="num-desc">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                </div>
+                                <div class="creme-box d-none d-xl-block"></div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
         </section>
 
         <section>
-            <div class="cover banner2">
+            <div class="cover" style="background-color:#ff5f61">
                 <div class="container">
                     <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, totam!<b>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore, corrupti.</b></h2>
                 </div>
             </div>
         </section>
 
-        <section>
-            <div class="container py-5">
-                <h4 class="wow fadeIn">The After Taste Approach</h4>
-                <p class="wow fadeIn">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, sapiente doloremque consequatur ea fugit odit suscipit nihil eaque odio totam quos vitae obcaecati nisi autem magni modi, excepturi voluptatem deleniti tenetur veniam labore!
-                    Alias voluptatum eaque eum soluta obcaecati, magnam, error accusantium vel iusto ipsam nobis rem aspernatur! Minima, corrupti reprehenderit. Velit vitae aspernatur, eligendi non exercitationem iusto sequi debitis autem eius veniam
-                    modi animi molestiae corporis iure consectetur natus nostrum laborum maiores accusamus aliquid! Itaque quia aut repudiandae pariatur quidem nulla aliquam sit esse est magnam sunt porro at necessitatibus perferendis dignissimos fugit
-                    animi a, ab quibusdam, provident ipsam.
-                </p>
-                <div class="row">
-                    <div class="col-md-6 col-lg-4 p-3 wow fadeIn">
-                        <div class="numbox px-2 py-4 px-md-4">
-                            <div class="value">01</div>
-                            <div class="num-desc">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 p-3 wow fadeIn">
-                        <div class="numbox px-2 py-4 px-md-4">
-                            <div class="value">01</div>
-                            <div class="num-desc">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 p-3 wow fadeIn">
-                        <div class="numbox px-2 py-4 px-md-4">
-                            <div class="value">01</div>
-                            <div class="num-desc">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="portfolio">
-            <div class="cover banner3">
-                <h1>PORTFOLIO</h1>
-            </div>
-        </section>
-
-        <section>
+        <!-- <section id="portfolio">
             <div class="container py-5">
                 <h1 class="head wow fadeIn">LATEST WORK</h1>
                 <p class="sub-head wow fadeIn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam qui necessitatibus sequi architecto consequuntur debitis. A porro labore ducimus aspernatur.</p>
@@ -381,7 +345,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <footer id="contact">
             <div class="bg-black" style="padding-top: 80px;padding-bottom: 20px;">
@@ -467,24 +431,6 @@
         </footer>
 
     </div>
-
-    <script>
-        function openNav() {
-            var wid = window.screen.availWidth;
-            if (wid >= 768) {
-                document.getElementById("mySidebar").style.width = "250px";
-                document.getElementById("main").style.marginRight = "250px";
-            } else if (wid < 768) {
-                document.getElementById("mySidebar").style.width = "250px";
-            }
-        }
-
-        function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
-            document.getElementById("main").style.marginRight = "0px";
-        }
-    </script>
-
 
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>

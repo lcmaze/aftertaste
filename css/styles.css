@@ -47,7 +47,7 @@ body {
     z-index: 1000;
     top: 0;
     right: 0;
-    background-color: #111;
+    background-color: #90c076;
     overflow-x: hidden;
     transition: all 0.5s ease-in-out !important;
     padding-top: 70px;
@@ -56,10 +56,12 @@ body {
 .sidebar a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 22px;
-    color: #818181;
+    font-size: 26px;
+    color: #000;
     display: block;
     transition: 0.2s;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 .sidebar a:hover {
@@ -72,6 +74,16 @@ body {
     right: 15px;
     font-size: 36px;
     margin-left: 50px;
+}
+
+.sidebar .social-links {
+    background-color: #ffffff20;
+}
+
+.sidebar .social-links a li {
+    list-style: none;
+    justify-content: flex-end;
+    font-size: 18px;
 }
 
 #main {
@@ -104,16 +116,24 @@ nav {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    box-shadow: 0px 4px 4px 0px #00000010;
+    /* box-shadow: 0px 4px 4px 0px #00000010; */
+    overflow: hidden;
+    padding: 24px 48px;
+    transition: 0.4s;
 }
 
-.logo {
+.logo,
+.logo-small {
     display: flex;
     align-items: center;
 }
 
 .logo a img {
-    width: 240px;
+    width: 200px;
+}
+
+.logo-small a img {
+    width: 60px;
 }
 
 .navigation a {
@@ -131,7 +151,7 @@ nav {
     position: absolute;
     z-index: 2;
     height: 100vh;
-    width: 70%;
+    width: 68%;
     margin: 0 auto;
     top: 0;
     display: flex;
@@ -165,13 +185,31 @@ nav {
 
 .img1 img {
     width: 100%;
-    max-width: 160px;
+    max-width: 180px;
+    margin-top: 60px;
 }
 
 .img2 img {
     width: 100%;
     max-width: 340px;
-    margin-top: 40px;
+}
+
+.white-line {
+    width: 160px;
+    height: 140%;
+    position: absolute;
+    z-index: 0;
+    top: -10%;
+    left: 40%;
+    transform: rotate(20deg);
+    background-color: #fff;
+}
+
+.white-circle {
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 100%;
 }
 
 .cover {
@@ -266,20 +304,33 @@ nav {
 }
 
 .numbox {
-    border: 2px solid #000;
+    /* border: 2px solid #f2c475; */
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 .numbox .value {
     font-weight: 900;
     font-size: 50px;
-    padding-right: 10px;
+    padding-right: 24px;
+    color: #ffffff20;
 }
 
 .numbox .num-desc {
     text-transform: uppercase;
     font-size: 20px;
+    color: #fff;
+}
+
+.creme-box {
+    width: 30px;
+    height: 180%;
+    position: absolute;
+    top: -40px;
+    background-color: #f2c475;
+    transform: rotate(20deg);
+    right: 20px;
 }
 
 .gallery {
@@ -397,6 +448,11 @@ footer .foot-desc {
     padding: 20px 20px 0 20px;
 }
 
+.wedo {
+    background-color: #2a292b;
+    padding: 80px 0px;
+}
+
 @keyframes float {
     0% {
         transform: translatey(0px);
@@ -409,9 +465,10 @@ footer .foot-desc {
     }
 }
 
-.avatar {
+
+/* .avatar {
     animation: float 3.3s ease-in-out infinite;
-}
+} */
 
 @media(max-width:1200px) {
     .overlay {
@@ -442,15 +499,8 @@ footer .foot-desc {
 }
 
 @media (max-width:767.98px) {
-    .banner-section {
-        height: 100vh;
-    }
-    .overlay-footer {
-        height: 100vh;
-    }
-    .overlay-cnt {
-        height: 100vh;
-        width: 75%;
+    .sidebar a {
+        font-size: 22px;
     }
     .cover h1 {
         font-size: 60px;
@@ -459,11 +509,14 @@ footer .foot-desc {
     .cover h2 {
         font-size: 24px;
     }
+    .img1 img {
+        padding-bottom: 0px;
+    }
 }
 
 @media (min-width:1350px) {
     .container {
-        max-width: 1340px !important;
+        max-width: 1310px !important;
     }
     .bann-txt {
         width: 380px;
