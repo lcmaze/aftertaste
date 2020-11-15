@@ -52,10 +52,12 @@ window.onscroll = function() {
 function scrollFunction() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         document.getElementById("navbar").style.padding = "8px 28px";
+        document.getElementById("navbar").style.boxShadow = "0px 4px 8px 0px #00000018";
         document.getElementById("logo-large").style.display = "none";
         document.getElementById("logo-small").style.display = "unset";
     } else {
         document.getElementById("navbar").style.padding = "24px 48px";
+        document.getElementById("navbar").style.boxShadow = "unset";
         document.getElementById("logo-large").style.display = "unset";
         document.getElementById("logo-small").style.display = "none";
     }
